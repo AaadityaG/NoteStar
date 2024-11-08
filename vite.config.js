@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   build: {
     rollupOptions: {
-      external: ['react-router-dom'],
+      // Remove the 'external' property here
       input: 'index.html'
     },
-      outDir: 'dist',
-      target: 'esnext',
-    },  
+    outDir: 'dist',
+    target: 'esnext',
+  },
   plugins: [react()],
 })
